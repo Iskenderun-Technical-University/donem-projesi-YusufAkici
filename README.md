@@ -61,5 +61,6 @@
     > Bu kısımda ders ekleme yapılır.
     
   >   ![9](https://user-images.githubusercontent.com/98983922/236042085-3e06d8b1-88b9-4104-8074-cacf4b66e41b.PNG)
+  ...
 
   

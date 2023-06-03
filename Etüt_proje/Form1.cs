@@ -60,15 +60,13 @@ namespace Etüt_proje
         private void BtnEtut_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into tbletut (dersıd,ogretmenıd,tarıh,SAAT) values (@p1,@p2,@p3,@p4)", baglanti);
+            SqlCommand komut = new SqlCommand("insert into tbletut (dersıd,ogretmenıd,tarıh,saat) values (@p1,@p2,@p3,@p4)", baglanti);
             komut.Parameters.AddWithValue("@p1", CmdDers.SelectedValue);
             komut.Parameters.AddWithValue("@p2", CmdOgretmen.SelectedValue);
             komut.Parameters.AddWithValue("@p3", MskTarih.Text);
             komut.Parameters.AddWithValue("@p4", MskSaat.Text);
 
             komut.ExecuteNonQuery();
-
-
             baglanti.Close();
 
             MessageBox.Show("Etüt Oluşturuldu", "Bilgi", MessageBoxButtons.OK
